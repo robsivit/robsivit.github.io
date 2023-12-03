@@ -1,0 +1,364 @@
+ /* FONTE PARA TITULOS */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+ /* FONTE PARA PARÁGRAFOS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+  /* COMEÇO DO STYLE TITULO DA PÁGINA */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+    /* FUNDO DA PÁGINA  */
+  body {
+    background-image: url("assets/img-tradicoes/fundo.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Open Sans";
+    align-items: center;
+    overflow-x: hidden; 
+    touch-action: pan-y;
+    touch-action: manipulation;
+    
+  }
+  
+
+  /* TITULO DA PÁGINA  */
+.titulo {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 200;
+  z-index: -1;
+  font-size: 100px;
+  color: #fff;
+}
+
+  /* AJUSTAR TELA  */
+@media screen and (max-width: 1300px) {
+  .titulo {
+    font-size: 0px; 
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .titulo {
+    font-size: 15px; 
+    max-width: 95%;
+  }
+}
+
+   /* NÃO MEXER */
+  .logo {
+    max-width: 250px;
+    padding: 0px;
+    margin-left: auto; 
+    align-items: right; 
+   }
+
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    background: #23232e;
+    height: 11vh;
+  }
+  
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 50px;
+    font-size: 20 px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 1300px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 62vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      z-index: 999;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /* NÃO MEXER */
+
+ /* FIM DO STYLE TITULO DA PÁGINA */
+
+
+
+ /* COMEÇO DO STYLE DA ONDA DA PÁGINA */
+
+ /* FUNDO DA PAGINA BRANCA E ONDA */
+
+ /* NÃO MEXER */
+ .conteudo{
+    padding: 100px;
+    background-color: #ffffff;
+}
+
+.conteudo h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.conteudo p{
+    font-size: 1.5em;
+}
+
+section.ondas-box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.onda{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: url("assets/img/wave.png");
+    background-size: 1000px 100px;
+
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+@keyframes ondaAnimada {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+#onda1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400;
+}
+#onda2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+#onda3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+#onda4{
+    z-index: 997;
+    opacity: 0.8;
+    background-position-x: 100px;
+}
+
+/* COMEÇO DO CONTEÚDO DA PÁGINA */
+
+.container1 {
+  max-width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.conteudo-circulos h1 {
+  font-size: clamp(3rem, 1vw + 2rem, 2rem);
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+.conteudo-circulos p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(20px, 1.5vw, 20px);
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: row; 
+}
+
+.circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.circle:last-child {
+  margin-left: 10px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.enlarge-circle {
+  transform: scale(1.7);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 37px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease;
+  white-space: normal;
+}
+
+.circle:hover .overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .container1 {
+    display: grid;
+    margin-bottom: 30px;
+  }
+  
+}
+
+/* COMEÇO RELIGIÃO */
+
+.imagem-final-container {
+  max-width: 80%; /* Defina a largura máxima desejada */
+  overflow: hidden;
+  margin: 0 auto; /* Centralizar o contêiner */
+  border-radius: 30px;
+  position: relative;
+}
+
+.imagem-final {
+  background-image: url("assets/img-tradicoes/religiao.png"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.texto-final {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(20px, 1.5vw, 20px);
+  text-align: justify;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+}
