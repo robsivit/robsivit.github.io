@@ -530,7 +530,7 @@ main span {
   .container,
   .img-coluna {
     margin: 30px 10%;
-    max-width: 60%;
+    max-width: 80%;
     width: auto;
     margin: 0 auto;
   }
