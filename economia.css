@@ -1,0 +1,613 @@
+/* FONTE PARA TITULOS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* FONTE PARA PARÁGRAFOS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+ /* COMEÇO DO STYLE TITULO DA PÁGINA */
+
+* {
+   margin: 0;
+   padding: 0;
+ }
+
+
+
+   /* FUNDO DA PÁGINA  */
+ body {
+   background-image: url("assets/img-economia/Economia.jpg"); 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   font-family: "Open Sans";
+   align-items: center;
+   overflow-x: hidden; 
+   touch-action: pan-y;
+   width: 100%;
+   
+ }
+ 
+
+ /* TITULO DA PÁGINA  */
+.titulo {
+ width: 60%;
+ height: 100%;
+ margin: auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ margin-top: 200;
+ z-index: -1;
+ font-size: 50px;
+ color: #fff;
+}
+
+ /* AJUSTAR TELA  */
+@media screen and (max-width: 1300px) {
+ .titulo {
+   font-size: 0px; 
+   max-width: 95%;
+ }
+}
+
+@media screen and (max-width: 820px) {
+ .titulo {
+   font-size: 15px; 
+   max-width: 95%;
+ }
+}
+
+  /* NÃO MEXER */
+ .logo {
+   max-width: 250px;
+   padding: 0px;
+   margin-left: auto; 
+   align-items: right; 
+  }
+
+ 
+ a {
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+   font-size: 25px;
+ }
+ 
+ a:hover {
+   opacity: 0.7;
+ }
+ 
+ .logo {
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+ }
+ 
+ nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: sans-serif;
+   background: #23232e;
+   height: 11vh;
+ }
+ 
+ 
+ .nav-list {
+   list-style: none;
+   display: flex;
+ }
+ 
+ .nav-list li {
+   letter-spacing: 3px;
+   margin-left: 50px;
+   font-size: 20 px;
+ }
+ 
+ .mobile-menu {
+   display: none;
+   cursor: pointer;
+ }
+ 
+ .mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+   transition: 0.3s;
+ }
+ 
+ @media (max-width: 1300px) {
+   body {
+     overflow-x: hidden;
+   }
+
+   .nav-list {
+     position: absolute;
+     top: 8vh;
+     right: 0;
+     width: 50vw;
+     height: 62vh;
+     background: #23232e;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     transform: translateX(100%);
+     transition: transform 0.3s ease-in;
+     z-index: 999;
+   }
+   .nav-list li {
+     margin-left: 0;
+     opacity: 0;
+   }
+   .mobile-menu {
+     display: block;
+   }
+ }
+ 
+ .nav-list.active {
+   transform: translateX(0);
+ }
+ 
+ @keyframes navLinkFade {
+   from {
+     opacity: 0;
+     transform: translateX(50px);
+   }
+   to {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+ 
+ .mobile-menu.active .line1 {
+   transform: rotate(-45deg) translate(-8px, 8px);
+ }
+ 
+ .mobile-menu.active .line2 {
+   opacity: 0;
+ }
+ 
+ .mobile-menu.active .line3 {
+   transform: rotate(45deg) translate(-5px, -7px);
+ }
+
+ /* NÃO MEXER */
+
+/* FIM DO STYLE TITULO DA PÁGINA */
+
+
+
+/* COMEÇO DO STYLE DA ONDA DA PÁGINA */
+
+/* FUNDO DA PAGINA BRANCA E ONDA */
+
+/* NÃO MEXER */
+.conteudo{
+   padding-top: 100px;
+   background-color: #ffffff;
+}
+
+.conteudo h1{
+   font-size: 3em;
+   margin-bottom: 20px;
+}
+
+.conteudo p{
+   font-size: 1.5em;
+}
+
+section.ondas-box{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+}
+
+.onda{
+   width: 100%;
+   height: 100px;
+   position: absolute;
+   bottom: 0;
+   background-image: url("assets/img/wave.png");
+   background-size: 1000px 100px;
+   
+   animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+@keyframes ondaAnimada {
+   0%{
+       transform: translateY(0px);
+   }
+   100%{
+       transform: translateY(10px);
+   }
+}
+
+#onda1{
+   z-index: 1000;
+   opacity: 1;
+   background-position-x: 400;
+}
+#onda2{
+   z-index: 999;
+   opacity: 0.5;
+   background-position-x: 300px;
+}
+#onda3{
+   z-index: 998;
+   opacity: 0.2;
+   background-position-x: 200px;
+}
+#onda4{
+   z-index: 997;
+   opacity: 0.8;
+   background-position-x: 100px;
+}
+
+
+/* RODAPÉ FINAL */
+
+
+
+/* NÃO MEXER */
+
+.rodape-final {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.redes-sociais {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex; 
+}
+
+.redes-sociais a {
+  margin-left: 10px; 
+}
+
+.redes-sociais img {
+  width: 80px;
+  max-width: 100px;
+}
+
+.texto-rodape {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  margin-top: 70px;
+  font-size: clamp(20px, 4vw, 35px); 
+}
+
+.copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 20px; 
+}
+
+@media screen and (max-width: 1300px) {
+  .redes-sociais {
+    position: static;
+    margin-top: 20px; 
+  }
+
+  .redes-sociais a {
+    margin-left: 0;
+  }
+
+  .texto-rodape {
+    text-align: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 20px;
+    font-size: clamp(20px, 4vw, 35px);
+  }
+}
+/* NÃO MEXER */
+
+/* FIM RODAPÉ FINAL */  
+
+/* CONTEÚDO ECONOMIA */
+
+/* PARTE 1 */
+
+#eparte1 {
+  margin-top: 110px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+#h2ep1 {
+  padding-bottom: 30px;
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: clamp(1.5rem, 1vw + 1.2rem, 1.3rem);
+
+  margin-bottom: 70px;
+  justify-content: center;
+  
+}
+
+#textoeparte1 {
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: clamp(20px, 2vw, 18px);
+  font-family: "Open Sans";
+  margin-top: -49px;
+  padding-bottom: 3.5rem;
+}
+
+#eimg1 {
+  border-radius: 350px;
+  max-width: 41%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1300px) {
+  #eparte1 {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #h2ep1 {
+    font-size: clamp(1rem, 1vw + 2rem, 2.6em);
+    margin-top: -60px;
+    align-items: center;
+    text-align: center;
+  }
+
+  #eimg1 {
+    max-width: 70%;
+    object-fit: cover;
+    margin-bottom: -300px;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #textoeparte1 {
+    width: 100%;
+    text-align: justify;
+    font-size: clamp(20px, 2vw, 24px);
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  #eparte1 {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+  }
+
+  #h2ep1 {
+    font-size: clamp(1rem, 1vw + 2rem, 2.6em);
+    margin-top: -60px;
+    text-align: center;
+  }
+
+  #eimg1 {
+    max-width: 90%;
+    margin-top: 10px;
+  }
+
+  #textoeparte1 {
+    width: 100%;
+    text-align: left;
+    font-size: clamp(20px, 2vw, 24px);
+    
+  }
+}
+
+  /* PARTE 2 */
+
+  #eparte2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%; /* Ajuste conforme necessário */
+    padding-right: 5%; /* Ajuste conforme necessário */
+    text-align: center;
+  }
+  
+  #h2ep2 {
+    padding-top: 30px;
+    font-size: 43px;
+  }
+  
+  #textoeparte2 {
+    font-size: 30px;
+    font-family: "Open Sans" sans-serif;
+    text-align: justify;
+  }
+  
+  #imge2 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; /* Ajuste conforme necessário */
+  }
+  
+  @media screen and (max-width: 825px) {
+    #eparte2 {
+      display: grid;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 100%;
+    }
+  
+    #h2ep2 {
+      font-size: clamp(1rem, 1vw + 2rem, 2.6em);
+      margin-top: 30px;
+      text-align: center;
+    }
+  
+    #imge2 {
+      max-width: 100%;
+      margin-top: 150px;
+  
+    }
+  
+    #textoeparte2 {
+      width: 100%;
+      text-align: justify;
+      font-size: clamp(20px, 2vw, 24px);
+    }
+  }
+    /* PARTE 3 */
+
+    #eparte3{
+      margin-top: 150px;
+      display: flex;
+      align-items: center; 
+      background-color: #F6F5F2;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    #h2ep3{
+      font-size: 30px;
+      text-align: center;
+    }
+
+
+    #imge3{
+      border-radius: 40px;
+      margin-left: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    #textoeparte3{
+      text-align: justify;
+      font-size: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
+
+    #tte3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* PARTE 4 */
+    
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      margin: 0 20px;
+    }
+    
+    .img-coluna {
+      width: 75%;
+      height: auto;
+      border-radius: 8px;
+      margin: 5px 0;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+    }
+    
+    .p-coluna {
+      margin-top: 8px;
+      text-align: justify;
+      font-family: "Open Sans";
+      font-size: 16px; 
+    }
+    
+    .h2-nova-classe {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 24px; 
+    }
+    
+    .conteudo .column h2 {
+      margin-top: 10px;
+    }
+    
+    @media screen and (max-width: 1300px) {
+      .conteudo > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .container,
+      .img-coluna {
+        margin: 30px 10%;
+        max-width: 85%;
+        width: auto;
+      }
+    
+      .p-coluna {
+        width: 100%;
+        text-align: center;
+        text-align: justify;
+      }
+    }
+
+
+    /* PARTE 5 */
+    
+    #imge5{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    #eparte5{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #h2ep5{
+      padding-top: 50px;
+      font-size: 40px;
+    }
+
+    #textoeparte5{
+   font-size: 30px;
+   padding-top: 30px;
+   padding-left: 150px;
+   padding-right: 150px;
+   text-align: justify;
+   padding-bottom: 50px;
+    }
+
+  .destaque{
+    color: #04C4CC
+   }
+
+  
