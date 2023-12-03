@@ -472,7 +472,7 @@ main span {
 
   .p-coluna {
     width: 100%;
-    text-align: center;
+    text-align: justify;
   }
 }
 
@@ -524,6 +524,7 @@ main span {
     padding: 10px;
     font-size: clamp(15px, 1.5vw, 20px);
     text-align: justify;
+    margin-top: 50px;
   }
 }
 
@@ -599,6 +600,7 @@ main span {
     font-family: "Open Sans", sans-serif;
     margin-top: 20px;
     font-size: clamp(20px, 4vw, 35px);
+    margin-top: 10px;
   }
 }
 /* NÃO MEXER */
