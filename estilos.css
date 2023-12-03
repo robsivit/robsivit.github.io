@@ -185,7 +185,7 @@
 
  /* NÃO MEXER */
  .conteudo{
-    padding: 100px;
+    padding-top: 100px;
     background-color: #ffffff;
 }
 
@@ -256,7 +256,7 @@ section.ondas-box{
   justify-content: center;
   gap: 1rem;
   padding: 3.5rem 5%;
-  margin-bottom: -300px;
+  margin-bottom: -200px;
 }
 
 
@@ -265,7 +265,6 @@ section.ondas-box{
   padding-bottom: 5rem;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin-top: 90px;
 }
 
 .secao1-home p, .secao2-home p{
@@ -273,8 +272,6 @@ section.ondas-box{
     font-family: 'Open Sans';
     padding-bottom: 3.5rem;
     font-size: 20px;
-    margin-top: -49px;
-
   }
 
   .secao1-home img {
@@ -282,8 +279,7 @@ section.ondas-box{
     max-width: 680px;
     height: auto;
     border-radius: 5%;
-    margin-bottom: 40px;
-    margin-top: 60px;
+    margin-bottom: 20px;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   }
@@ -298,20 +294,26 @@ main span {
     display: grid;
   }
 
+  .secao1-home h1-container {
+    width: 100%;
+    text-align: justify;
+   
+  }
+
+
   .secao1-home h2 {
     font-size: clamp(1rem, 1vw + 2rem, 2.6em);
-    margin-top: -60px;
+    margin-top: -40px;
   }
 
   .secao1-home div, .secao1-home img {
-    max-width: 85%;
+    max-width: 100%;
     width: 100%;
-    margin-top: -20px;
   }
 
   .secao1-home p {
     width: 100%; 
-    text-align: left;
+    text-align: justify;
     font-size: 20px;
     justify-content: left;
   }
@@ -356,6 +358,7 @@ main span {
 @media screen and (max-width: 1300px) {
   .conteudo > .secao2-home {
     display: grid;
+    margin-top: 300px;
   }
 
   .secao2-home h2-container {
@@ -372,12 +375,12 @@ main span {
 
   .secao2-home div,
   .secao2-home img {
-    max-width: 85%;
+    max-width: 100%;
     width: 100%;
   }
 
   .secao2-home p {
-    text-align: left;
+    text-align: justify;
   }
 }
 
@@ -387,19 +390,19 @@ main span {
   }
 
   .secao2-home h2 {
-    font-size: clamp(1rem, 1vw + 1rem, 1rem);
-    margin-top: -60px;
+    font-size: clamp(2rem, 1vw + 1rem, 1rem);
+    margin-top: 20px;
   }
 
   .secao2-home div, .secao2-home img {
-    max-width: 85%;
+    max-width: 100%;
     width: 100%;
     margin-top: -20px;
   }
 
   .secao2-home p {
     width: 100%; 
-    text-align: left;
+    text-align: justify;
     font-size: 20px;
     justify-content: left;
   }
@@ -457,6 +460,7 @@ main span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 250px;
   }
 
   .container,
@@ -481,13 +485,13 @@ main span {
 .imagem-final-container {
   max-width: 100%;
   overflow: hidden;
-  border-radius: 30px;
+
 }
 
 .imagem-final {
   object-fit: cover;
-  width: 100%;
-  height: 60vh; 
+  width: 1343px;
+  height: 630; 
 }
 
 .texto-final {
@@ -513,18 +517,25 @@ main span {
 @media screen and (max-width: 825px) {
   .imagem-final {
     height: 300px; 
+    margin-top: 60px;
   }
 
   .texto-final {
     padding: 10px;
     font-size: clamp(15px, 1.5vw, 20px);
-    text-align: center;
+    text-align: justify;
   }
 }
 
 
 
 /* RODAPÉ FINAL */
+
+
+
+
+
+
 
 
 
